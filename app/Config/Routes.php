@@ -25,6 +25,7 @@ $routes->set404Override();
 $routes->setAutoRoute(true);
 
 // custom routes
+// $routes->get('/_header', 'signup');
 $routes->get('/', 'SignupController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->get('/signin', 'SigninController::index');
