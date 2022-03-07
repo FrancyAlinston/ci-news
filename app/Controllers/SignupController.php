@@ -3,6 +3,15 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\UserModel;
 
+class Site extends BaseController
+{
+  public function get_client_ip_address()
+  {
+    helper(["app"]);
+
+    echo getClientIpAddress();
+  }
+}
 class SignupController extends Controller
 {
     public function index()

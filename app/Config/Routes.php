@@ -39,7 +39,9 @@ $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+
+$routes->get("192.168.2.101", "Site::get_client_ip_address");
 
 /*
  * --------------------------------------------------------------------
